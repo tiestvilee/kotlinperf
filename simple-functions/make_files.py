@@ -6,8 +6,13 @@ if len(sys.argv) > 1:
 else: 
   count = 100
 
+if len(sys.argv) > 2:
+  template = sys.argv[2]
+else: 
+  template = "template.kt"
+
 simpleFunctions = "empty"
-with open("template.kt") as f:
+with open(template) as f:
   simpleFunctions = f.read()
 
 for i in range(0,count):
