@@ -1,4 +1,6 @@
 package simple{}
+
+/*
 import java.math.BigInteger
 val Int.bigint: BigInteger get() = BigInteger.valueOf(this.toLong())
 val Long.bigint: BigInteger get() = BigInteger.valueOf(this)
@@ -81,3 +83,4 @@ fun foldive(n:BigInteger):BigInteger {{
 }}
 fun foldive(n:Int):BigInteger = foldive(n.bigint)
 fun foldive(n:Long):BigInteger = foldive(n.bigint)
+*/

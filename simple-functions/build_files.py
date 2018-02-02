@@ -21,9 +21,11 @@ def median(lst):
             return None
     if n % 2 == 1:
             s = sorted(lst)
-            return (s[n//2], s[0], s[-1])
+            return (s[0], s[n//4], s[n//2], s[3*n//4], s[-1])
     else:
             s = sorted(lst)
-            return (sum(s[n//2-1:n//2+1])/2.0, s[0], s[-1])
+            return (s[0], s[n//4], sum(s[n//2-1:n//2+1])/2.0, s[3*n//4], s[-1])
 
-print median(results)
+stats = median(results)
+print stats
+print stats[2]
